@@ -1,7 +1,7 @@
 # Assesing sequence quality and filtering Oxford Nanopore data
 
 * Teaching: 30 minutes
-* Exercises: 15 minutes
+* Exercises: 20 minutes
 
 #### Objectives
 
