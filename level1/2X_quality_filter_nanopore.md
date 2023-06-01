@@ -1,3 +1,19 @@
+# Assesing sequence quality and filtering Oxford Nanopore data
+
+* Teaching: 30 minutes
+* Exercises: 15 minutes
+
+#### Objectives
+
+* Know how to assess the quality of Oxford Nanopore data using visualization tools such as pycoQC
+* Be able to perform quality filtering of nanopore data and to remove short reads
+
+#### Keypoints
+
+* `pycoQC` is a great tool for generating interactive reports to explore key aspects of a Nanopore sequencing dataset
+* Sequences can be filtered to remove low quality reads and short reads using `nanofilt`
+
+
 ## Assessing sequence quality
 
 The initial step for every sequencing project is quality control to assess the quality of your data. This will give you some statistics of your sequencing data, such as length and quality score distributions, as well as highlight potential problems with your input DNA/RNA, the sequencing run or the output itself.
@@ -58,7 +74,7 @@ In addition to read statistics, `pycoQC` also gives a lot of information about t
 
 ---
 
-## Removing short and low quality reads
+## Filtering short and low quality reads
 
 Removing short reads and eliminating low quality data can improve your downstream analysis. For example, it can be beneficial to remove short reads for whole genome sequencing projects. `Nanofilt` is a tool that can filter reads by quality score and length. It is also capable of cropping a specified number of bases from the start or the end of a read, which can be useful sometimes.
 
